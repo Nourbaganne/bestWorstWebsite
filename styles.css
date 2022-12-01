@@ -1,0 +1,20 @@
+body{
+    background-color: red !important;
+    background-image: url('Images/pumpkin-logo.png');
+    background-size: 100px;
+}
+
+.bg-yellow{
+    background-color: blue;
+    background-image: url('Images/pumpkin-logo.png');
+    background-size: 70px;
+
+}
+
+.nav-link{
+    color: yellow !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
