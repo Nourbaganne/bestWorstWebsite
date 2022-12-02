@@ -1,14 +1,14 @@
 body{
-    background-color: red !important;
+    background-color: black !important;
     background-image: url('Images/pumpkin-logo.png');
     background-size: 100px;
+    transform: rotate(-5deg);
+    cursor: none;
 }
 
-.bg-yellow{
-    background-color: blue;
+.bg-blue{
     background-image: url('Images/pumpkin-logo.png');
     background-size: 70px;
-
 }
 
 .nav-link{
@@ -18,3 +18,80 @@ body{
 .nav-link:hover{
     color: white !important;
 }
+
+.margin-top{
+    margin-top: 200px;
+}
+
+.ghost > *{
+    animation: fly 5s linear infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+@keyframes fly {
+    0%{
+        transform: translate(0,110vh);opacity: .50;
+    }
+    50%{
+        transform: translate(110vw,0);opacity: 1;
+    }
+    100%{
+        transform: translate(0,110vh);opacity: .50;
+    }
+}
+
+.ghost > *{
+    animation: fly 25s linear infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+@keyframes fly {
+	0% {
+
+		transform: translate(-200%,110vh) rotateZ(0deg);opacity: 1;
+	}
+
+	12.5% {
+		transform: translate(120vw,-120%) rotateZ(20deg);
+	}
+
+	25% {
+		transform: translate(-200%,50vh) scale(1.75) rotateZ(-20deg);
+	}
+
+	37.5% {
+		transform: translate(-200%,-120%) rotateZ(-40deg);opacity: .5;
+	}
+
+	50% {
+		transform: translate(100vw,50vh) rotateZ(0deg);
+	}
+
+	62.5% {
+		transform: translate(20vw,100vh) rotateZ(20deg);
+	}
+	75% {
+		transform: translate(200%,100vh) rotateZ(20deg);opacity: .25;
+	}
+	87.5% {
+		transform: translate(50vw,-200%) scale(1.75) rotateZ(20deg);
+	}
+
+	100% {
+		transform: translate(-200%,110vh) rotateZ(0deg);opacity: 1;
+	}
+}  
+
+/* Styles required only for the example above */
+.scrollspy-example {
+    color: wheat;
+    position: relative;
+    height: 200px;
+    overflow: auto;
+  }
